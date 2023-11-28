@@ -1,7 +1,7 @@
 {
-  "name": "clase-1",
+  "name": "aprendiendo-node",
   "version": "1.0.0",
-  "description": "Curso de Node - Clase 1",
+  "description": "Curso de Node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/EstebanAP1/aprendiendo-node.git"
   },
   "keywords": [
-    "node"
+    "Node"
   ],
   "author": "Esteban Alejandro Padilla Padilla",
   "license": "ISC",
@@ -19,7 +19,14 @@
     "url": "https://github.com/EstebanAP1/aprendiendo-node/issues"
   },
   "homepage": "https://github.com/EstebanAP1/aprendiendo-node#readme",
-  "dependencies": {
-    "picocolors": "1.0.0"
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }

@@ -1,0 +1,24 @@
+### Blank page
+
+GET http://localhost:3000
+
+### Recuperar información de ditto
+
+GET http://localhost:3000/poke/ditto
+
+### Crear un pokémon 
+
+POST http://localhost:3000/poke
+Content-Type: application/json
+
+{
+  "name": "pikachu",
+  "type": "electric",
+  "moves": [
+    "thunder"
+  ]
+}
+
+### 404
+
+GET http://localhost:3000/404??
