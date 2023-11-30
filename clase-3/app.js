@@ -36,12 +36,6 @@ app.get('/', (req, res) => {
   res.json({ message: 'Home page' })
 })
 
-// métodos normales: GET/HEAD/POST
-// métodos complejos: PUT/PATCH/DELETE
-
-// CORS-PRE-Flight
-// OPTIONS
-
 // Los recursos que sean movies se identifican con /movies
 app.get('/movies', (req, res) => {
   const { genre } = req.query
