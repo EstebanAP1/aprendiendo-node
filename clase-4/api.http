@@ -1,0 +1,42 @@
+### REST Client
+
+
+### Home page
+GET http://localhost:3000
+
+### Recuperar todas las películas
+GET http://localhost:3000/movies
+
+### Recuperar película por ID
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar todas las películas de un género
+GET http://localhost:3000/movies?genre=Crime
+
+### Crear una película con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Batman",
+  "year": 2023,
+  "director": "Esteban Padilla",
+  "duration": 200,
+  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ]
+}
+
+### Actualizar una película
+PATCH http://localhost:3000/movies/da0f4635-ef54-4c90-99dc-b6454fefab8e
+Content-Type: application/json
+
+{
+  "year": 2021
+}
+
+
+### Eliminar una película
+DELETE http://localhost:3000/movies/da0f4635-ef54-4c90-99dc-b6454fefab8e
