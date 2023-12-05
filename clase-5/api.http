@@ -1,0 +1,43 @@
+### REST Client
+
+
+### Home page
+GET http://localhost:3000
+
+### Recuperar todas las películas
+GET http://localhost:3000/movies
+
+### Recuperar película por ID
+GET http://localhost:3000/movies/81f0fc3e-9387-11ee-b79c-16b3b71f2cea
+
+### Recuperar todas las películas de un género
+GET http://localhost:3000/movies?genre=action
+
+### Crear una película con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Batman",
+  "year": 2023,
+  "director": "Esteban Padilla",
+  "duration": 200,
+  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ]
+}
+
+### Actualizar una película
+PATCH http://localhost:3000/movies/81f0fc3e-9387-11ee-b79c-16b3b71f2cea
+Content-Type: application/json
+
+{
+  "title": "Batman: Arkham Night",
+  "year": 2023
+}
+
+
+### Eliminar una película
+DELETE http://localhost:3000/movies/6faddbb5-92d9-11ee-a34c-4ccc6a58060a
